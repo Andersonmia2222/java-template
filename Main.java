@@ -15,10 +15,37 @@ String[] apCompSci = new String[13];
 double[] prices = new double[5]; 
 String[] names = new String[5];
 int[] luckyNums = new int[10];
-boolean[] yesNo = new boolean[3];//default values false 
-
+boolean[] yesNo = new boolean[3];//default value 
 // how to access a value in an array 
-System.out.println(prices[0] );
+// arrayName[] is the index position 
+System.out.println(prices[0] ); // first item 
+// Use the same syntax to set a value in an array 
+luckyNums[0] = 11;
+luckyNums[5] = 14;
+System.out.println( luckyNums[0] ); 
+System.out.println( luckyNums[5] ); 
+System.out.println( luckyNums[3] ); // prints 0 
+ // System.out.println( luckyNums[45] ); // index 45 is out of bounds! 
+// create an array with values using an initalizer list
+
+String[] table = {"Mia", "Ethan", "Aaniyah"}; 
+System.out.println( table[1] ); // gets the 2nd value in array 
+System.out.println( table[0] ); // get the first value(index 0) 
+// only use intilizer list shortcut when first declearing array 
+// i.e. we cant do : apComSci = {"name1", "name2"}
+ 
+ // the .length attribute gets the number of items in array
+int lengthOfTableArray = table.length;
+System.out.println( lengthOfTableArray );//3 items 
+// to get LAST ITEM use: arrayName[arrayName.length - 1]
+
+System.out.println( finalIndex); // 2 is final index 
+
+System.out.println( table[ finalIndex]); // table[2] = "Aaniyah"
+System.out.println(table[ table/length -1 ]); // same as above 
+
+
+
 
    }//ends main Method
 
